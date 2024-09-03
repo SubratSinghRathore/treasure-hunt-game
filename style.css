@@ -83,8 +83,8 @@ span {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px; 
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px 80px; 
     gap: 6px;
     margin: auto;
     padding: 40px;
