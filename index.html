@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="first_step" class="first_step steps flex">
+            <span>
+                This is find the treasure game and you are the treasure hunter.
+            </span>
+            <div class="flex">
+                <button type="button" id="step1" class="btn" onclick="btnClick1()">Next</button>
+                <button type="button" id="skipBtn" class="btn" onclick="btnClickSkip()">Skip All</button>
+            </div>
+        </div>
+        <div id="second_step" class="second_step steps flex">
+            <span>
+                You have to find mystery Box. You have only five chances. If you are able to find the treasure than please show
+                 to subrat and grab your chocolate.
+            </span>
+            <button type="button" id="step2" class="btn" onclick="btnClick2()">Next</button>
+        </div>
+        <div id="third_step" class="third_step steps flex">
+            <span>
+                Don't be oversmart by playing this game and think to learn the position of mistery. This game suffle every
+                single play.
+            </span>
+            <button type="button" id="step3" class="btn" onclick="btnClick3()">Play</button>
+        </div>
+    </header>
+
+    <div class="game_container">
+        <div class="container" id="container">
+            <div class="item" onclick="check(1)">
+                <img id="1" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(2)">
+                <img id="2" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(3)">
+                <img id="3" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(4)">
+                <img id="4" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(5)">
+                <img id="5" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(6)">
+                <img id="6" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(7)">
+                <img id="7" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(8)">
+                <img id="8" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(9)">
+                <img id="9" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(10)">
+                <img id="10" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(11)">
+                <img id="11" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(12)">
+                <img id="12" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(13)">
+                <img id="13" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(14)">
+                <img id="14" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(15)">
+                <img id="15" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+            <div class="item" onclick="check(16)">
+                <img id="16" class="particepants_images" src="./assets/mystery_box.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="userTarget" id="userTarget">
+        <div>
+            <form onsubmit="return stopRefresh()">
+                <label for="name">Enter Your name</label><br>
+                <input
+                    style="margin: auto; width: 100%; height: 30px; padding-left: 10px; font-size: 20px; color: #219ebc;"
+                    type="text" id="name" required><br>
+                <button
+                    style="margin: 9px auto; display: flex; justify-content: center; align-items: center; padding: 6px;"
+                    type="submit" value="submit" onclick="play()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="scoreBoard" class="scoreBoard display_none_all">
+       
+    </div>
+</body>
+
+</html>

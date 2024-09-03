@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media  only screen and (max-width: 800px){
+    *{
+        font-size: 14px !important;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 10px;
+}
+
+button {
+    padding: 9px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #219ebc;
+    background-color: #8ecae6;
+    border-radius: 10px;
+    border: 2px solid #219ebc;
+    box-shadow: 5px 5px 10px 0px #219ebc;
+
+}
+
+span {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #219ebc;
+}
+
+.steps {
+    border: 5px solid #219ebc;
+    border-radius: 12px;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first {
+    display: none;
+}
+
+.second_step {
+    display: none;
+    width: 50vw;
+}
+
+.second_step_toggle {
+    display: inherit;
+}
+
+.third_step {
+    display: none;
+}
+
+.display_none_all {
+    display: none !important;
+}
+
+.grid_container{
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px; 
+    gap: 6px;
+    margin: auto;
+    padding: 40px;
+    width: fit-content;
+}
+
+.particepants_images{
+    height: 100%;
+    width: 100%;
+}
+
+.game_container{
+    margin: auto;
+    display: none;
+}
+.item{
+    border: 1px solid #219ebc;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+ 
+}
+
+.userTarget{
+    margin: auto;
+    width: fit-content;
+    padding-top: 20vh;
+}
+
+form{
+    margin: auto;
+    display: contents;
+}
+
+label{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #219ebc;   
+}
+
+.finalPlay{
+    margin: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #219ebc;
+}
+
+.userTarget{
+    display: none;
+}
+
+.objectiveAndScore{
+    margin: auto;
+    width: fit-content;
+    display: none;
+}
+
+.scoreBoard{
+    font-size: 30px;
+    font-weight: 700;
+    color: #219ebc;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    width: min-content;
+    border: 7px solid #219ebc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
