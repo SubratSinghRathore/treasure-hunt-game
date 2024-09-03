@@ -8,6 +8,15 @@
     *{
         font-size: 14px !important;
     }
+    .container {
+        display: grid;
+        grid-template-rows: 70px 70px 70px 70px !important;
+        grid-template-columns: 70px 70px 70px 70px !important; 
+        gap: 6px !important;
+        margin: auto !important;
+        padding: 40px !important;
+        width: fit-content !important;
+    }
 }
 
 body {
@@ -83,8 +92,8 @@ span {
 
 .container {
     display: grid;
-    grid-template-rows: 80px 80px 80px 80px;
-    grid-template-columns: 80px 80px 80px 80px; 
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px; 
     gap: 6px;
     margin: auto;
     padding: 40px;
